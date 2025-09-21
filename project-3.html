@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Case Study | Image Colorization Research</title>
+    <meta name="description" content="A case study of a research project on AI-driven image colorization using GAN and U-Net." />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/emily-wilkinson.png"
+              alt="Emily Wilkinson Logo"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Emily Wilkinson</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="" class="header__link" target="_blank"> Resume </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="DRIVE_LINK_ANDA" target="_blank"> Resume </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="case-study-hero">
+        <div class="main-container case-study-hero__content">
+            <div class="case-study-hero__image-container">
+                <img src="./assets/png/problem-3.png" alt="Image Colorization Mockup" class="case-study-hero__image">
+            </div>
+            <div class="case-study-hero__text-container">
+                <p class="case-study-hero__subtitle">Research Project</p>
+                <h1 class="heading-primary case-study-hero__title">Modified GAN-U-Net for Enhanced Image Colorization</h1>
+                <p class="case-study-hero__description">
+                    A research paper investigating the effectiveness of modified U-Net and GAN architectures for AI-driven image colorization and restoring historical black-and-white photos.
+                </p>
+                <div class="case-study-hero__info-grid">
+                    <div>
+                        <p class="case-study-hero__info-title">Project Type</p>
+                        <p class="case-study-hero__info-text">Deep Learning Research</p>
+                    </div>
+                    <div>
+                        <p class="case-study-hero__info-title">Role</p>
+                        <p class="case-study-hero__info-text">Co-author & Researcher</p>
+                    </div>
+                </div>
+                <a href="#project-details" class="btn btn--med btn--theme-inv case-study-hero__cta">View Project Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-details" class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__content-main">
+
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Abstract</h3>
+              <p class="project-details__desc-para">
+                In today's digital age, AI-driven image colorization has gained significant attention, particularly for restoring historical black-and-white photographs. This study investigates the effectiveness of modified U-Net architectures, enhanced with multi-attention mechanisms and pre-trained embeddings, in improving the quality and accuracy of image colorization. By leveraging U-Net and Generative Adversarial Networks (GANs), we evaluate the performance of these enhanced architectures in generating realistic colorized images and provide insights into the impact of generative techniques on colorization outcomes.
+              </p>
+            </div>
+
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Proposed Method</h3>
+              <p class="project-details__desc-para">
+                This research employed a quantitative and qualitative experimental design to evaluate how different U-Net variations impact image colorization. We implemented six models divided into two groups:
+              </p>
+              <ul class="feature-list">
+                <li><strong>Group A (Non-GAN):</strong> Plain U-Net, U-Net + MobileNetV3, and U-Net + Multi-Attention.</li>
+                <li><strong>Group B (GAN-integrated):</strong> The same three architectures with an integrated PatchGAN discriminator.</li>
+              </ul>
+              <p class="project-details__desc-para">
+                The models were trained on 10,000 images from the COCO Dataset. All images were pre-processed by resizing to 128x128 pixels and converting to the perceptually uniform LAB color space to separate lightness (L) from color information (A, B), which is optimal for colorization tasks.
+              </p>
+            </div>
+            
+            <div class="project-details__desc">
+                <h3 class="project-details__content-title">Results & Discussion</h3>
+                <p class="project-details__desc-para">
+                    The models were trained for 25 epochs using the Adam optimizer. Performance was evaluated using PSNR (Peak Signal-to-Noise Ratio) and SSIM (Structural Similarity Index Measure). The results showed that the **Plain U-Net model achieved the best performance** with a PSNR score of **24.198** and an SSIM of **0.9153**, outperforming even the more complex GAN-integrated architectures.
+                </p>
+                 <p class="project-details__desc-para">
+                    This suggests that while theoretically beneficial, the inclusion of GANs did not guarantee improved performance in our setup and resulted in slightly lower quantitative outcomes, likely due to increased computational load and potential training instabilities.
+                </p>
+            </div>
+
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Technologies Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">PyTorch</div>
+                <div class="skills__skill">U-Net</div>
+                <div class="skills__skill">GAN</div>
+                <div class="skills__skill">MobileNetV3</div>
+                <div class="skills__skill">Multi-Attention</div>
+                <div class="skills__skill">COCO Dataset</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See Project</h3>
+              <a
+                href="https://github.com/Wilkinsonemily/Modified-GAN-U-Net-for-Enhanced-Image-Colorization-and-Restoring-Old-Photos.git"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Code Link</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-details__bottom-link">
+          <a href="./index.html#projects" class="go-back-link">&larr; Go Back</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-2">
+            <h1 class="heading heading-sm text-lt">EMILY WILKINSON</h1>
+            <p class="main-footer__short-desc">
+              A Computer Science student passionate about technology and creative
+              problem-solving. Let's connect and build the future.
+            </p>
+          </div>
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/emily-wilkinson-2a0522364/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/Wilkinsonemily">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/wilkinsonemillyyyy?igsh=MTQ2MTg5eDdiNXVubw%3D%3D&utm_source=qr">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; Copyright 2025. Made by Emily Wilkinson
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

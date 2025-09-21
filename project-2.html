@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Case Study | GlowGlow</title>
+    <meta name="description" content="A case study of the GlowGlow AI Skincare Recommendation System." />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/emily-wilkinson.png"
+              alt="Emily Wilkinson Logo"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Emily Wilkinson</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="" class="header__link" target="_blank"> Resume </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="DRIVE_LINK_ANDA" target="_blank"> Resume </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="case-study-hero">
+        <div class="main-container case-study-hero__content">
+            <div class="case-study-hero__image-container">
+                <img src="./assets/png/project-2-images.png" alt="GlowGlow App Mockup" class="case-study-hero__image">
+            </div>
+            <div class="case-study-hero__text-container">
+                <p class="case-study-hero__subtitle">GlowGlow</p>
+                <h1 class="heading-primary case-study-hero__title">AI Skincare Recommendation System</h1>
+                <p class="case-study-hero__description">
+                    An AI-powered personal skincare assistant that predicts the effectiveness of skincare products based on your skin type, removing guesswork from your skincare routine.
+                </p>
+                <div class="case-study-hero__info-grid">
+                    <div>
+                        <p class="case-study-hero__info-title">Project Type</p>
+                        <p class="case-study-hero__info-text">AI / Machine Learning App</p>
+                    </div>
+                    <div>
+                        <p class="case-study-hero__info-title">Role</p>
+                        <p class="case-study-hero__info-text">Creator & Developer</p>
+                    </div>
+                </div>
+                <a href="#project-details" class="btn btn--med btn--theme-inv case-study-hero__cta">View Project Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-details" class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__content-main">
+
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Background</h3>
+              <p class="project-details__desc-para">
+                The beauty and skincare industry has grown rapidly, with the number of companies in Indonesia increasing by 21.9% from 2022 to 2023. However, traditional methods for identifying skin types and choosing products are often time-consuming, expensive, and confusing for consumers. Many find it difficult to understand their skin's specific needs and are overwhelmed by the vast number of available products.
+              </p>
+              <p class="project-details__desc-para">
+                GlowGlow was created to address this challenge by offering a sophisticated, user-friendly solution powered by Artificial Intelligence. This initiative also supports Sustainable Development Goal (SDG) 3 for Good Health and Well-being by helping consumers make informed choices, reduce product waste, and minimize negative environmental impacts.
+              </p>
+            </div>
+
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Methodology & Solution</h3>
+              <p class="project-details__desc-para">
+                The core of GlowGlow is a recommendation system that uses Convolutional Neural Networks (CNNs) to predict product effectiveness based on skin type. We utilize three powerful architectures: <strong>VGG-16</strong> for its strong baseline performance, <strong>MobileNetV2</strong> for efficiency on mobile devices, and <strong>ResNet-50</strong> for future scalability and handling complex features.
+              </p>
+              <p class="project-details__desc-para">
+                The model was trained on a combined dataset of skin images (categorized as acne, dry, or oily) and product information from CSV files. We performed extensive image preprocessing, including resizing, normalization, and data augmentation, to improve model accuracy and prevent overfitting.
+              </p>
+            </div>
+            
+            <div class="project-details__desc">
+                <h3 class="project-details__content-title">Model Evaluation</h3>
+                <p class="project-details__desc-para">
+                    The VGG-16 model achieved a final validation **accuracy of 76%** after 50 epochs. The F1-Score was consistent across all classes (0.73-0.79), indicating stable performance. The confusion matrix revealed strong performance for 'dry' skin (81% recall) and 'acne' (76% recall), with some misclassifications that provide clear areas for future improvement.
+                </p>
+            </div>
+
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools & Technologies Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">Flask</div>
+                <div class="skills__skill">PyTorch</div>
+                <div class="skills__skill">VGG-16</div>
+                <div class="skills__skill">CNN</div>
+                <div class="skills__skill">Pandas</div>
+                <div class="skills__skill">Scikit-learn</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See Project</h3>
+              <a
+                href="https://github.com/Wilkinsonemily/GlowGlow---AI-Skincare-Recommendation-System.git"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Code Link</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-details__bottom-link">
+          <a href="./index.html#projects" class="go-back-link">&larr; Go Back</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-2">
+            <h1 class="heading heading-sm text-lt">EMILY WILKINSON</h1>
+            <p class="main-footer__short-desc">
+              A Computer Science student passionate about technology and creative
+              problem-solving. Let's connect and build the future.
+            </p>
+          </div>
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/emily-wilkinson-2a0522364/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/Wilkinsonemily">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/wilkinsonemillyyyy?igsh=MTQ2MTg5eDdiNXVubw%3D%3D&utm_source=qr">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; Copyright 2025. Made by Emily Wilkinson
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
