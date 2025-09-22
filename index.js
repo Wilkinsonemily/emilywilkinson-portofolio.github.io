@@ -1,4 +1,4 @@
-// --- FUNGSI MENU HAMBURGER & LOGO ---
+
 const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont');
 const smallMenu = document.querySelector('.header__sm-menu');
 const headerHamMenuBtn = document.querySelector('.header__main-ham-menu');
@@ -54,4 +54,4 @@ const revealOnScroll = () => {
 };
 
 window.addEventListener('scroll', revealOnScroll);
-revealOnScroll(); // Panggil sekali saat load
+revealOnScroll();
