@@ -1039,9 +1039,9 @@ textarea {
         justify-content: center;
     }
     .case-study-hero__image {
-        width: 70%;          /* lebih kecil di mobile */
-        max-width: 320px;    /* biar gak kegedean */
-        margin: 0 auto;      /* center */
+        width: 70%;         
+        max-width: 320px;   
+        margin: 0 auto;      
     }
     .case-study-hero__title {
         text-align: center;
