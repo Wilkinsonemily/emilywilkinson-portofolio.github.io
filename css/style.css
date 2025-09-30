@@ -947,6 +947,7 @@ textarea {
 
 /* --- CASE STUDY HERO SECTION --- */
 .case-study-hero {
+    background-color: var(--case-study-bg); 
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -966,6 +967,7 @@ textarea {
 .case-study-hero__image {
     width: 100%;
     display: block;
+    border-radius: 8px;
 }
 
 .case-study-hero__subtitle {
