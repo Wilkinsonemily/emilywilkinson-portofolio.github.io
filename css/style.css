@@ -947,7 +947,7 @@ textarea {
 
 /* --- CASE STUDY HERO SECTION --- */
 .case-study-hero {
-    background-color: var(--case-study-bg); 
+    background-color: rgb(243, 251, 255); 
     display: flex; 
     justify-content: center; 
     align-items: center; 
